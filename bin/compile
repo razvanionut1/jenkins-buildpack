@@ -31,10 +31,10 @@ pushd $vendor_dir
   mv $JRE_DIR jre
 popd
 
-status "Repacking jenkins.war."
-pushd $build_dir
-  zip -q -r jenkins.war * -x "vendor/*"
-popd
+#status "Repacking jenkins.war."
+#pushd $build_dir
+#  zip -q -r jenkins.war * -x "vendor/*"
+#popd
 
 # Update the PATH
 status "Building runtime environment."
